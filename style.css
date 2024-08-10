@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: rgb(188, 102, 9);
+    height: 8vh;
+}
+
+.nav-link {
+    color: rgb(244, 244, 25);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: rgb(5, 1, 3);
+    background-color: rgb(244, 244, 25);
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: rgb(239, 230, 230);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.main {
+    background: url('./images/file.png') no-repeat;
+    background-size: 125%; /* Zoom in on the image */
+    background-position: -75% center; 
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+
+}
+
+.main h3 {
+    font-size: 4.4rem;
+    font-weight: 700;
+    padding: 20px;
+}
+.main h6{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1;
+    border-bottom: 3px solid rgb(233, 20, 109);
+    width: 50%;
+}
+
+.main .bt1 {
+    height: 55px;
+    width: 138px;
+    background-color: rgb(233, 20, 109);
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.main .bt1:hover{
+    background-color: rgb(138, 5, 61);
+    transition: 0.5s;
+}
+.main .bt2 {
+    height: 55px;
+    width: 138px;
+    background-color: transparent;
+    color: rgb(233, 20, 109);
+    outline: none;
+    border: 1px solid rgb(233, 20, 109);
+    font-weight: bold;
+    border-radius: 5px;
+}
+.main .bt2:hover{
+    background-color: rgb(241, 13, 108);
+    transition: 0.5s;
+    color: white;
+}
+.main h6{
+    padding: 20px;
+}
+.about img{
+    -webkit-box-shadow: -27px -16px 93px 14px rgba(0,0,0,0.19);
+-moz-box-shadow: -27px -16px 93px 14px rgba(0,0,0,0.19);
+box-shadow: -27px -16px 93px 14px rgba(0,0,0,0.19);
+}
+.h1{
+    font-size: 3%;
+    font-weight: 900;
+}
+.progress{
+    background-color: rgb(233, 219, 219);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+
+    -webkit-box-shadow: inset 200px 44px 116px -120px rgba(0,0,0,0.19);
+    -moz-box-shadow: inset 200px 44px 116px -120px rgba(0,0,0,0.19);
+    box-shadow: inset 200px 44px 116px -120px rgba(0,0,0,0.19);
+}
+.pro-value1{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+.pro-value2{
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+.pro-value3{
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+.pro-value4{
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+.progress p{
+    color: white;
+    padding: 12px;
+}
+@keyframes load1 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes load2 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes load3 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes load4 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+.btn1{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: none;background-color: pink;
+    color:brown;
+    border-radius: 5px;
+}
+.btn1:hover{
+    background-color: transparent;
+    color: brown;
+    border: 1px solid brown;
+    transition: 0.5s;
+
+}
+.btn2{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: 1px solid brown;background-color:transparent;
+    color:brown;
+    border-radius: 5px;
+}
+.btn2:hover{
+    background-color: brown;
+    color: white;
+    border: none;
+    transition: 0.5s;
+
+}
+.card{
+    border: none;
+    outline: none;
+    -webkit-box-shadow: -9px -88px 162px -70px rgba(0,0,0,0.48);
+    -moz-box-shadow: -9px -88px 162px -70px rgba(0,0,0,0.48);
+    box-shadow: -9px -88px 162px -70px rgba(0,0,0,0.48);
+}
+.card p{
+    color: gray;
+
+}
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color:lightgray;
+    color: black;
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+
+}
+.card:hover .circle{
+    background-color: black;
+    color:white ;
+    transition: 0.5s;
+}
+.control ul li{
+    list-style: none;
+    background-color: black;
+    padding: 5px 15px;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.item {
+    position: relative;
+}
+
+.item:hover {
+    -webkit-box-shadow: -33px -11px 181px -50px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: -33px -11px 181px -50px rgba(0, 0, 0, 0.48);
+    box-shadow: -33px -11px 181px -50px rgba(0, 0, 0, 0.48);
+    transition: 0.5s;
+}
+
+.item span {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.item:hover span {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.item::before {
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(238, 235, 230, 0.644);
+    opacity: 0;
+    position: absolute;
+}
+
+.item:hover::before {
+    opacity: 1;
+    transition: 0.3s;
+}
+.circle:hover{
+    background-color: black;
+    transition: 0.4s;
+    color: white;
+}
+.contact .btn3{
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 140px;
+    border-radius: 4px;
+}
+.btn3:hover{
+    background: rgb(234, 251, 51);
+    color: black;
+    transition: 0.4s;
+    border: 1px solid black;
+}
+.footer {
+    background-color: #343a40;
+    color: white;
+    position: relative;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .footer .social-icons {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .footer a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #007bff;
+  }
+  
+  .footer a:hover i.fa-facebook-f {
+    color: #4267B2;
+  }
+  
+  .footer a:hover i.fa-instagram {
+    color: #C13584;
+  }
+  
+  .footer a:hover i.fa-github {
+    color: #333;
+  }
+  .digital-clock {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .current-date {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  
